@@ -30,12 +30,12 @@ export const Header = () => {
       <div className="home-header-container" id="home-header-container">
         <div className="header-container" id="header-container">
           <div className="header-logo" id="header-logo">
-            <img src={logo} />
+            <img src={logo} alt="times-square-logo"/>
           </div>
 
           <div className="header-menu-items" id="header-menu-items">
             {data?.header.navlist.map((items, i) => {
-              return <span>{items}</span>;
+              return <span key={i}>{items}</span>;
             })}
           </div>
 
@@ -61,7 +61,7 @@ export const Header = () => {
             id="header-menu-hamburger-items"
           >
             {data?.header.navlist.map((items, i) => {
-              return <span>{items}</span>;
+              return <span key={i}>{items}</span>;
             })}
           </div>
         </div>
