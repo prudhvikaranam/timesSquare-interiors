@@ -1,5 +1,6 @@
 :root {
-  --primary-color-times: #d81a46;
+  --primary-color-times: #6fac72;
+  /* --primary-color-times: #d81a46; */
   --primary-color-green: #59a340;
   --primary-color-orange: #fd7037;
   --primary-color-multicolor: #e4192b;
@@ -25,6 +26,12 @@ body {
 
 .app-container {
   overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/homebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  background-attachment: fixed;
 }
 
 
@@ -32,12 +39,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/homebg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  background-attachment: fixed;
+
 }
 
 
@@ -53,7 +55,8 @@ body {
 }
 
 .home-header-container.dark {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
   /* padding: 0px 10px; */
   transition: background-color 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
@@ -88,6 +91,7 @@ h1 {
 
 .header-menu-items span {
   padding: 0px 20px;
+  font-size: 1vw;
 }
 
 .header-hamburger-menu-container {
@@ -147,7 +151,54 @@ h1 {
 }
 
 
+.heading-section {
+  color: var(--primary-color-times);
+  font-weight: 900;
+}
 
+
+
+
+
+
+/* Work container */
+.our-work-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.heading-container {
+  color: white;
+  text-align: center;
+}
+
+.work-container-layout {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.work-container {
+  margin: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 26vw;
+}
+
+.container-heading {
+  font-size: 25px;
+  color: black;
+}
+
+.container-paragraph {
+  color: black;
+}
+
+
+.work-container img{
+  width: 100%;
+}
 
 /* Media Queries */
 
@@ -158,6 +209,20 @@ h1 {
 @media (min-width: 481px) and (max-width: 767px) {}
 
 @media (min-width: 768px) and (max-width: 1024px) {}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+
+  .work-container-layout{
+    flex-wrap: wrap;
+  }
+
+  .work-container{
+    width: 80%;
+  }
+
+}
 
 
 @media (min-width: 320px) and (max-width: 1024px) {
