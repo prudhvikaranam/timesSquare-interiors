@@ -92,12 +92,14 @@ h1 {
 
 .header-hamburger-menu-container {
   width: 100%;
+  overflow-y: scroll;
   display: flex;
   justify-content: center;
   position: relative;
   left: -100%;
   opacity: 0;
   transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  box-shadow: 3px 6px 4px 3px rgb(144 144 144 / 82%);
 }
 
 .header-hamburger-menu-container.slideIn {
@@ -109,11 +111,8 @@ h1 {
 
 .header-hamburger-menu-container.slideOut {
   left: 100%;
-  /* Move it to the right */
   transform: translateX(-50%);
-  /* Ensure proper alignment */
   opacity: 0;
-  /* Fade out as it moves */
 }
 
 
@@ -123,8 +122,9 @@ h1 {
   background: rgba(255, 255, 255, 1);
   color: black;
   text-align: center;
-  padding: 20px 0px;
   width: 100%;
+  max-height: 85vh;
+  overflow: scroll;
 }
 
 .header-menu-hamburger-items span {
@@ -146,9 +146,7 @@ h1 {
   border-radius: 6px;
 }
 
-/* .hidehamburgerMenu{
-  display: none;
-} */
+
 
 
 /* Media Queries */
