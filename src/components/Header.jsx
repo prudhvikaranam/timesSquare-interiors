@@ -52,7 +52,7 @@ export const Header = () => {
         </div>
 
         <div
-          className={`header-hamburger-container ${
+          className={`header-hamburger-menu-container ${
             showHamburgerMenu ? "slideIn" : "slideOut"
           }`}
         >
