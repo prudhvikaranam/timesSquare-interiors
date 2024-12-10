@@ -159,7 +159,7 @@ function App() {
 
               </div>
               <div className='designer-profile'>
-                <img src={user1} alt='designer' />
+                <img src={user2} alt='designer' />
                 <h4 className='designer-name heading-section'>John Doe</h4>
               </div>
             </div>
