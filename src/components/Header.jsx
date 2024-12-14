@@ -1,5 +1,5 @@
 import logo from "../assets/images/logo.png";
-import data from "../assets/data/data.json";
+import { navData } from "../assets/data/data";
 import { useEffect, useState } from "react";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,33 +9,46 @@ export const Header = () => {
     setshowHamburgerMenu(!isMenuOpen);
   };
 
-
   useEffect(() => {
-    const navBar =  document.getElementById("home-header-container");
-  window.onscroll = function () {
-    if (navBar) {
-      if (window.scrollY > 50) {
-        navBar.classList.add("dark");
-      } else {
-        navBar.classList.remove("dark");
+    const navBar = document.getElementById("home-header-container");
+    window.onscroll = function () {
+      if (navBar) {
+        if (window.scrollY > 50) {
+          navBar.classList.add("dark");
+        } else {
+          navBar.classList.remove("dark");
+        }
       }
-    }
-  };
-  },[])
-
-
+    };
+  }, []);
 
   return (
     <>
       <div className="home-header-container" id="home-header-container">
         <div className="header-container" id="header-container">
           <div className="header-logo" id="header-logo">
-            <img src={logo} alt="times-square-logo"/>
+            <img src={logo} alt="times-square-logo" />
           </div>
 
           <div className="header-menu-items" id="header-menu-items">
-            {data?.header.navlist.map((items, i) => {
-              return <span key={i}>{items}</span>;
+            {navData?.header.navlist.map((items, i) => {
+              if (items?.children) {
+                return (
+                  <>
+                    <span key={i} className="menu-item">
+                      <span>{items.name}</span>
+                      <span className="dropdown-icon">↓</span> {/* The dropdown icon */}
+                      <div className="child-menu">
+                        {items.children?.map((child, j) => (
+                          <span key={j}>{child}</span>
+                        ))}
+                      </div>
+                    </span>
+                  </>
+                );
+              }
+
+              return <span key={i}>{items.name}</span>;
             })}
           </div>
 
@@ -60,8 +73,23 @@ export const Header = () => {
             className={`header-menu-hamburger-items`}
             id="header-menu-hamburger-items"
           >
-            {data?.header.navlist.map((items, i) => {
-              return <span key={i}>{items}</span>;
+            {navData?.header.navlist.map((items, i) => {
+              if (items?.children) {
+                return (
+                  <>
+                    <span key={i} className="menu-item">
+                      <span>{items.name}</span>
+                      <div className="child-menu">
+                        {items.children?.map((child, j) => (
+                          <span key={j}>{child}</span>
+                        ))}
+                      </div>
+                    </span>
+                  </>
+                );
+              }
+
+              return <span key={i}>{items.name}</span>;
             })}
           </div>
         </div>
