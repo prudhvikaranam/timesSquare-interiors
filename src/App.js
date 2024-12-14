@@ -9,6 +9,7 @@ import user1 from './assets/images/user1.png'
 import user2 from './assets/images/user2.png'
 import project_1_2 from './assets/images/project_1_2.JPG';
 import project_1_3 from './assets/images/project_1_3.JPG';
+import whyus from './assets/images/whyus.png';
 
 
 
@@ -54,7 +55,7 @@ function App() {
       {/* Themes */}
 
 
-      <div className='design-theme-container'>
+      <div className='design-theme-container dark-container'>
         <div className="heading-container">
           <h2 className='heading-section'>OUR DESIGN THEMES</h2>
           <p className='heading-section-dark'>When you choose an home interior design theme from here, not only are you are telling us what tastes, colors and preferences move you. You are also giving yourself a fantastic head start on the journey of turning your house into a ‘home’</p>
@@ -159,6 +160,108 @@ function App() {
 
       </div>
 
+
+
+
+
+
+      {/* Why Us */}
+
+
+
+      <div className='whyus-container dark-container'>
+        <div className="heading-container">
+          <h2 className='heading-section'>WHY US</h2>
+          <p className='heading-section-dark'>We use next-gen Design, Technology, Furniture & Implementation methods, to solve not just today’s Home Interior design needs, but even the ones you don’t foresee for tomorrow</p>
+        </div>
+
+
+        <div className="whyUs-container-layout">
+
+          <div className='container'>
+            <img src={whyus} alt='' />
+            <h4 className='heading-section'>Personal Designer</h4>
+            <p>Will transform your every need into functional & aesthetic design, and help you plan your space intelligently</p>
+          </div>
+
+
+
+
+          <div className='container'>
+            <img src={whyus} alt='' />
+            <h4 className='heading-section'>VR Experience</h4>
+            <p>Will transform your every need into functional & aesthetic design, and help you plan your space intelligently</p>
+          </div>
+
+
+
+          <div className='container'>
+            <img src={whyus} alt='' />
+            <h4 className='heading-section'>Impeccable Implementation</h4>
+            <p>Will transform your every need into functional & aesthetic design, and help you plan your space intelligently</p>
+          </div>
+
+
+
+
+          <div className='container'>
+            <img src={whyus} alt='' />
+            <h4 className='heading-section'>Reputed Partners</h4>
+            <p>Will transform your every need into functional & aesthetic design, and help you plan your space intelligently</p>
+          </div>
+
+
+
+
+
+
+
+          <div className='container'>
+            <img src={whyus} alt='' />
+            <h4 className='heading-section'>Personal Designer</h4>
+            <p>Will transform your every need into functional & aesthetic design, and help you plan your space intelligently</p>
+          </div>
+
+
+
+
+          <div className='container'>
+            <img src={whyus} alt='' />
+            <h4 className='heading-section'>VR Experience</h4>
+            <p>Will transform your every need into functional & aesthetic design, and help you plan your space intelligently</p>
+          </div>
+
+
+
+          <div className='container'>
+            <img src={whyus} alt='' />
+            <h4 className='heading-section'>Impeccable Implementation</h4>
+            <p>Will transform your every need into functional & aesthetic design, and help you plan your space intelligently</p>
+          </div>
+
+
+
+
+          <div className='container'>
+            <img src={whyus} alt='' />
+            <h4 className='heading-section'>Reputed Partners</h4>
+            <p>Will transform your every need into functional & aesthetic design, and help you plan your space intelligently</p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+      </div>
 
     </div>
 
