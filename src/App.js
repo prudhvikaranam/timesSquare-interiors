@@ -7,7 +7,6 @@ import theme2 from './assets/images/theme2.JPG'
 import theme4 from './assets/images/theme4.JPG'
 import user1 from './assets/images/user1.png'
 import user2 from './assets/images/user2.png'
-import project_1_1 from './assets/images/project_1_1.JPG';
 import project_1_2 from './assets/images/project_1_2.JPG';
 import project_1_3 from './assets/images/project_1_3.JPG';
 
