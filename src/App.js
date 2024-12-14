@@ -29,7 +29,7 @@ function App() {
         <div className='whats-app-us'>
 
 
-          <a href="https://api.whatsapp.com/send?phone=8884615822" target='_blank' class="float">
+          <a href="https://api.whatsapp.com/send?phone=8884615822" target='_blank' class="float"  rel="noopener noreferrer">
             <img src={whatsApp} alt='' className='whatsApp' />
           </a>
 
