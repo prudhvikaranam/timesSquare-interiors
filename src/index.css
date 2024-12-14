@@ -265,6 +265,7 @@ h1 {
 .theme-container {
   min-width: 34%;
   max-width: 48%;
+  text-align: center;
 }
 
 .theme-container img {
@@ -412,7 +413,8 @@ h1 {
   flex-wrap: wrap;
 }
 
-.location-address .address, .map {
+.location-address .address,
+.map {
   width: 40%;
 }
 
@@ -445,7 +447,7 @@ h1 {
     flex: 1 1 30%;
   }
 
-  
+
 
 }
 
@@ -493,16 +495,46 @@ h1 {
     padding: 0px 30px 0px 5px;
   }
 
-  .location-address{
+  .location-address {
     flex-direction: column;
   }
 
-  .location-address .address, .map {
+  .location-address .address,
+  .map {
     width: 100%;
   }
 
 }
 
+.view-more {
+  text-align: center;
+}
+
+.view-more button {
+  padding: 17px 150px;
+  background: #6fac72;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+}
+
+
+.whats-app-us {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  bottom: 100px;
+  right: 0px;
+  text-align: end;
+}
+
+
+.whatsApp {
+  padding: 10px;
+  min-width: 10%;
+  max-width: 12%;
+}
 
 @media (min-width: 1025px) {
 

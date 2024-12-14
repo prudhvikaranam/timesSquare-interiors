@@ -10,6 +10,7 @@ import user2 from './assets/images/user2.png'
 import project_1_2 from './assets/images/project_1_2.JPG';
 import project_1_3 from './assets/images/project_1_3.JPG';
 import whyus from './assets/images/whyus.png';
+import whatsApp from './assets/images/whatsApp.png';
 
 
 
@@ -21,6 +22,20 @@ function App() {
       {/* Home and Landing page */}
       <div className="home-container">
         <Header />
+
+
+
+
+        <div className='whats-app-us'>
+
+
+          <a href="https://api.whatsapp.com/send?phone=8884615822" target='_blank' class="float">
+            <img src={whatsApp} alt='' className='whatsApp' />
+          </a>
+
+
+
+        </div>
       </div>
 
 
@@ -80,6 +95,11 @@ function App() {
             <img src={theme2} alt='we-design' />
             <p className='theme-heading'>THEME TWO</p>
           </div>
+        </div>
+
+
+        <div className='view-more'>
+          <button>View More</button>
         </div>
       </div>
 
@@ -157,6 +177,10 @@ function App() {
           </div>
         </div>
 
+
+        <div className='view-more'>
+          <button>View More</button>
+        </div>
 
       </div>
 
