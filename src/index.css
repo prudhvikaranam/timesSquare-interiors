@@ -192,7 +192,8 @@ h1 {
 
 /* Work container */
 .our-work-container,
-.our-projects-container {
+.our-projects-container,
+.our-customers-feedback-container {
   background-color: rgba(255, 255, 255, 1);
   padding: 20px;
 }
@@ -383,6 +384,39 @@ h1 {
 
 }
 
+
+
+/* Customer Feedback */
+
+
+.customer-feedback-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.customer-feedback {
+  background-color: rgb(225 225 225 / 40%);
+  color: black;
+  width: 30%;
+  padding: 50px;
+  box-shadow: 5px 4px 8px 1px grey;
+}
+
+.location-address {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.location-address .address, .map {
+  width: 40%;
+}
+
+
 /* Media Queries */
 
 
@@ -411,6 +445,7 @@ h1 {
     flex: 1 1 30%;
   }
 
+  
 
 }
 
@@ -457,6 +492,15 @@ h1 {
   .header-container {
     padding: 0px 30px 0px 5px;
   }
+
+  .location-address{
+    flex-direction: column;
+  }
+
+  .location-address .address, .map {
+    width: 100%;
+  }
+
 }
 
 

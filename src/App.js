@@ -263,7 +263,54 @@ function App() {
 
       </div>
 
-    </div>
+
+
+
+      {/* What Customers Say */}
+
+
+      <div className='our-customers-feedback-container'>
+        <div className="heading-container">
+          <h2 className='heading-section'>WHAT OUR CUSTOMERS SAY</h2>
+          <p className='heading-section-light'>Customer Delight. Delivered</p>
+        </div>
+
+
+        <div className='customer-feedback-container'>
+          <div className='customer-feedback'>
+            <p className='name heading-section'>Mr. Shiva Ram</p>
+            <p className='feedback'>"This is our first home & AJ Times Sqaure did a brilliant job in designing our dream home. My wife had a lot of design related inputs and they incorporated all of it in the design plan.."</p>
+          </div>
+          <div className='customer-feedback'>
+            <p className='name heading-section'>Mr. Shiva Ram</p>
+            <p className='feedback'>"This is our first home & AJ Times Sqaure did a brilliant job in designing our dream home. My wife had a lot of design related inputs and they incorporated all of it in the design plan.."</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      {/* What Customers Say */}
+
+      <div className='our-location dark-container'>
+        <div className="heading-container">
+          <h2 className='heading-section'>INTERIOR DESIGN SERVICES IN HYDERABAD</h2>
+        </div>
+        <div className='location-address'>
+          <div className='address'>
+            <address>
+              Times Sqaure Interiors<br />
+              Mindspace Building, 2nd Floor,<br />
+              Gachibowli, Hyderabad  500001<br />
+            </address>
+          </div>
+          <div className='map'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3667194125474!2d78.37231208553285!3d17.44215335857927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93001b75ba2b%3A0x72aef5ac3f2e4e9a!2sRaidurg%20Metro%20Station!5e0!3m2!1sen!2sin!4v1734203775113!5m2!1sen!2sin" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div >
 
   );
 }
