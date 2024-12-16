@@ -1,6 +1,7 @@
 import logo from "../assets/images/logo.png";
 import { navData } from "../assets/data/data";
 import { useEffect, useState } from "react";
+import staircase from "../assets/images/staircase.png";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showHamburgerMenu, setshowHamburgerMenu] = useState(false);
@@ -37,7 +38,8 @@ export const Header = () => {
                   <>
                     <span key={i} className="menu-item">
                       <span>{items.name}</span>
-                      <span className="dropdown-icon">↓</span> {/* The dropdown icon */}
+                      <span className="dropdown-icon">↓</span>{" "}
+                      {/* The dropdown icon */}
                       <div className="child-menu">
                         {items.children?.map((child, j) => (
                           <span key={j}>{child}</span>
@@ -96,7 +98,7 @@ export const Header = () => {
       </div>
       <div className="home-body-container">
         <h1>Homes Designed For Tomorrow</h1>
-        <br />
+        <img src={staircase} alt="" /><br/>
         <button className="home-button">View Our Designs</button>
       </div>
     </>

@@ -26,16 +26,14 @@ function App() {
 
 
 
-        <div className='whats-app-us'>
+        {/* <div className='whats-app-uss'> */}
 
 
-          <a href="https://api.whatsapp.com/send?phone=918884615822" target='_blank' class="float"  rel="noopener noreferrer">
-            <img src={whatsApp} alt='' className='whatsApp' />
-          </a>
+        <img src={whatsApp} alt='' href="https://api.whatsapp.com/send?phone=918884615822" target='_blank' rel="noopener noreferrer" className="whatsAppIcon"/>
 
 
 
-        </div>
+        {/* </div> */}
       </div>
 
 

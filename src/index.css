@@ -72,6 +72,13 @@ body {
   align-items: center;
 }
 
+
+
+.home-body-container img{
+  min-width: 5%;
+  max-width: 6%;
+}
+
 h1 {
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
@@ -219,7 +226,7 @@ h1 {
 }
 
 .container-heading {
-  font-size: 18px;
+  font-size: 15px;
   color: black;
 }
 
@@ -447,7 +454,11 @@ h1 {
     flex: 1 1 30%;
   }
 
-
+  .customer-feedback{
+    min-width: 40%;
+    padding: 16px;
+    max-width: 40%;
+  }
 
 }
 
@@ -511,30 +522,24 @@ h1 {
 }
 
 .view-more button {
-  padding: 17px 150px;
   background: #6fac72;
   border: none;
   border-radius: 5px;
   color: white;
   font-weight: 700;
+  width: 20%;
+  padding: 15px 0px;
 }
 
 
-.whats-app-us {
-  display: flex;
-  justify-content: end;
+
+.whatsAppIcon{
+  min-width: 7%;
+  max-width: 7%;
   position: fixed;
   bottom: 100px;
-  right: 0px;
-  text-align: end;
-}
-
-
-.whatsApp {
-  padding: 10px;
-  min-width: 10%;
-  max-width: 12%;
-}
+  right: 25px;
+} 
 
 @media (min-width: 1025px) {
 
